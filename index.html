@@ -1,37 +1,154 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abqos | My Portfolio</title>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
-  background: #eaf2ff;
-  padding: 30px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef4ff;
+  color: #243047;
 }
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
+
+header {
+  background: #102a56;
+  color: white;
+  padding: 22px;
   text-align: center;
-  margin-top: 50px;
 }
-h1 { color: #1565c0; }
-p { font-size: 17px; }
+
+nav {
+  background: #183d75;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+section {
+  background: white;
+  margin: 22px 15px;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+h2 {
+  color: #1565c0;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 20px;
+  background: #dceaff;
+}
+
+.hero h2 {
+  font-size: 30px;
+  color: #102a56;
+}
+
 button {
   background: #1565c0;
   color: white;
-  padding: 12px 25px;
   border: none;
+  padding: 13px 22px;
   border-radius: 8px;
+  font-size: 16px;
+}
+
+.skill {
+  display: inline-block;
+  background: #e1edff;
+  color: #174d91;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+footer {
+  background: #102a56;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 </style>
 </head>
+
 <body>
-<div class="container">
-<h1>Welcome to My Website!</h1>
-<p>I am learning Cloud Computing.</p>
-<p>My goal is to become a Cloud Engineer.</p>
-<button>Let's Get Started</button>
+
+<header>
+  <h1>ABQOS</h1>
+  <p>Future Cloud Engineer | Computer Science Student</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h2>Hello, I'm Abqos 👋</h2>
+  <p>I'm learning technology and building my future in Cloud Computing.</p>
+  <a href="#projects">
+    <button>View My Projects</button>
+  </a>
 </div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a Computer Science student with an interest
+    in Cloud Computing and Web Development.
+    I'm learning new skills and building projects
+    to grow as a technology professional.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <span class="skill">HTML</span>
+  <span class="skill">CSS</span>
+  <span class="skill">GitHub</span>
+  <span class="skill">Cloud Computing (Learning)</span>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <h3>My First Website</h3>
+  <p>
+    My first website, built using HTML and CSS
+    and published with GitHub Pages.
+  </p>
+  <a href="https://abqos.github.io/shiny-tribble/">
+    Visit My Website
+  </a>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Interested in my learning journey or projects?</p>
+  <a href="https://github.com/abqos">
+    Visit My GitHub Profile
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Abqos | Learning. Building. Growing.</p>
+</footer>
+
 </body>
 </html>
