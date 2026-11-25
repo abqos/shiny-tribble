@@ -206,7 +206,19 @@
     alert("Welcome to Abqos's Portfolio! Thanks for visiting.");
   }
   </script>
+<script>
+  function updateClock() {
+    const now = new Date();
 
+    const time = now.toLocaleTimeString();
+
+    document.getElementById("clock").textContent = time;
+  }
+
+  updateClock();
+
+  setInterval(updateClock, 1000);
+</script>
 </body>
 <button class="btn" onclick="welcomeMessage()">
   Explore My Journey
